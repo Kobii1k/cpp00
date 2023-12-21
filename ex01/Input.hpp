@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*   Input.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/15 14:16:44 by mgagne            #+#    #+#             */
-/*   Updated: 2023/12/20 08:27:11 by mgagne           ###   ########.fr       */
+/*   Created: 2023/12/21 12:44:55 by mgagne            #+#    #+#             */
+/*   Updated: 2023/12/21 22:18:17 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <string.h>
+#ifndef INPUT_HPP
+	#define INPUT_HPP
 
-int	main(int argc, char **argv)
-{
-	int	i;
-	size_t len;
+	#include <string.h>
+	#include <iostream>
+	// #include <limits>
+	#include <iomanip>
+	#include <stdlib.h>
 
-	i = 1;
-	if (argc == 1)
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
-	else
-	{
-		while (i < argc)
-		{
-			len = strlen(argv[i]);
-			for (size_t j = 0; j < len; j++)
-			{
-				std::cout << (char)std::toupper(argv[i][j]);
-			}
-			i++;
-		}
-		std::cout << std::endl;
-	}
-	return (0);
-}
+	std::string	input_string(std::string field_name);
+	std::string	input_nb(std::string field_name);
+
+#endif

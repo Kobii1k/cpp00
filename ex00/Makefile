@@ -7,42 +7,39 @@ BLUE		=	\033[1;34m
 CYAN		=	\033[1;36m
 DEFAULT		=	\033[0m
 SUPPR		=	\r\033[2K
-NAME		=	PhoneBook
+NAME            =    megaphone
 
 # --------------- FILES --------------- #
 
-LIST_SRC	=	main.cpp	\
-				Contact.cpp	\
-				PhoneBook.cpp \
-				Input.cpp
+LIST_SRC        =    megaphone.cpp
 
 # ------------ DIRECTORIES ------------ #
 
-DIR_BUILD		=	.build/
-DIR_SRC			=	./
-DIR_INCLUDE		=	./
+DIR_BUILD        =    .build/
+DIR_SRC         =    ./
+DIR_INCLUDE        =    ./
 
 # ------------- SHORTCUTS ------------- #
 
-OBJ				=	$(patsubst %.cpp, $(DIR_BUILD)%.o, $(SRC))
-DEP				=	$(patsubst %.cpp, $(DIR_BUILD)%.d, $(SRC))
-SRC				=	$(addprefix $(DIR_SRC),$(LIST_SRC))
+OBJ                =    $(patsubst %.cpp, $(DIR_BUILD)%.o, $(SRC))
+DEP                =    $(patsubst %.cpp, $(DIR_BUILD)%.d, $(SRC))
+SRC                =    $(addprefix $(DIR_SRC),$(LIST_SRC))
 
 # ------------ COMPILATION ------------ #
 
-CPPFLAGS		=	-Wall -Wextra -Werror -std=c++98 -g
-
-DEP_FLAGS		=	-MMD -MP
+CPPFLAGS        =    -Wall -Wextra -Werror -std=c++98
+CXX				=	c++
+DEP_FLAGS        =    -MMD -MP
 
 # -------------  COMMANDS ------------- #
 
-RM				=	rm -rf
-MKDIR			=	mkdir -p
+RM                =    rm -rf
+MKDIR            =    mkdir -p
 
 #***********************************  RULES  **********************************#
 
 .PHONY: all
-all:			$(NAME)
+all:            $(NAME)
 
 # ---------- VARIABLES RULES ---------- #
 
