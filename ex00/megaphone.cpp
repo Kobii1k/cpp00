@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:16:44 by mgagne            #+#    #+#             */
-/*   Updated: 2023/12/20 08:27:11 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/15 12:00:01 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	size_t len;
+	int		i;
+	size_t	len;
 
 	i = 1;
 	if (argc == 1)

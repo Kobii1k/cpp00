@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:39:21 by mgagne            #+#    #+#             */
-/*   Updated: 2024/01/14 19:52:32 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/15 12:05:53 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main(void)
 
 	size = 0;
 	std::cout << "WELCOME TO YOUR PHONEBOOK" << std::endl;
-	while (1)
+	while (true)
 	{
 		std::cout << "commands : ADD | SEARCH | EXIT" << std::endl;
 		in = inputString("");
