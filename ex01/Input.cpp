@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:44:57 by mgagne            #+#    #+#             */
-/*   Updated: 2023/12/21 22:23:40 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/14 19:52:28 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	ft_isdigit(std::string str)
 	return (1);
 }
 
-std::string	input_string(std::string field_name)
+std::string	inputString(std::string field_name)
 {
 	std::string		str;
 
@@ -47,7 +47,7 @@ std::string	input_string(std::string field_name)
 	return (str);
 }
 
-std::string	input_nb(std::string field_name)
+std::string	inputNb(std::string field_name)
 {
 	std::string		str;
 

@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:14:32 by mgagne            #+#    #+#             */
-/*   Updated: 2023/12/21 22:44:35 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/14 19:52:41 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	PhoneBook::search(int size)
 		if (i <= size)
 			c_list[i - 1].print(i);
 	}
-	in = input_nb("contact index n°");
+	in = inputNb("contact index n°");
 	index = std::atoi(in.c_str());
 	if (!(index >= 1 && index <= 8))
 	{

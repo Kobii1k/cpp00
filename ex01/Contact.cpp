@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:10:37 by mgagne            #+#    #+#             */
-/*   Updated: 2023/12/21 22:53:03 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/14 19:53:38 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ void	Contact::print(int index)
 
 void	Contact::set(void)
 {
-	first_name = input_string("First Name");
-	last_name = input_string("Last Name");
-	nickname = input_string("Nickname");
-	phone = input_nb("Phone Number");
-	secret = input_string("Darkest Secret");
+	first_name = inputString("First Name");
+	last_name = inputString("Last Name");
+	nickname = inputString("Nickname");
+	phone = inputNb("Phone Number");
+	secret = inputString("Darkest Secret");
 }

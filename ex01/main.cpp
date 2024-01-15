@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:39:21 by mgagne            #+#    #+#             */
-/*   Updated: 2023/12/21 22:03:14 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/14 19:52:32 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int main(void)
 	while (1)
 	{
 		std::cout << "commands : ADD | SEARCH | EXIT" << std::endl;
-		in = input_string("");
+		in = inputString("");
 		if (in.compare("ADD") == 0)
 			phonebook.add(&size);
 		else if (in.compare("SEARCH") == 0)
