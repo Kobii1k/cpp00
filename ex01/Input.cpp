@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:44:57 by mgagne            #+#    #+#             */
-/*   Updated: 2024/01/14 19:52:28 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/16 17:29:08 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ std::string	inputString(std::string field_name)
 		else
 			std::cout << field_name << " : ";
 		std::getline(std::cin, str);
+		if (std::cin.eof())
+			exit(1);
 		if (str.empty())
 		{
 			std::cin.clear();
