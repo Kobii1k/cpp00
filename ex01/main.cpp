@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:39:21 by mgagne            #+#    #+#             */
-/*   Updated: 2024/01/15 12:05:53 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/16 10:23:12 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main(void)
 		else if (in.compare("SEARCH") == 0)
 			phonebook.search(size);
 		else if (in.compare("EXIT") == 0)
-			return (0);
+			exit(0);
 	}
 	return (0);
 }
