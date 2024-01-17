@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:00:59 by mgagne            #+#    #+#             */
-/*   Updated: 2023/12/21 22:19:30 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/17 15:07:37 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 	class Contact
 	{
 		private:
-			std::string	first_name;
-			std::string	last_name;
+			std::string	firstName;
+			std::string	lastName;
 			std::string	nickname;
 			std::string	phone;
 			std::string	secret;

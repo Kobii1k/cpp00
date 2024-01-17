@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 12:10:37 by mgagne            #+#    #+#             */
-/*   Updated: 2024/01/14 19:53:38 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/01/17 15:07:37 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 void	Contact::print(int index)
 {
 	std::cout << "|"  << std::setw(10) << std::right << index << "|";
-	if (first_name.size() > 10)
+	if (firstName.size() > 10)
 	{
-		first_name[9] = '.';
-		std::cout << std::setw(10) << std::right << first_name.substr(0, 10) << "|";
+		firstName[9] = '.';
+		std::cout << std::setw(10) << std::right << firstName.substr(0, 10) << "|";
 	}
 	else
-		std::cout << std::setw(10) << std::right << first_name << "|";
+		std::cout << std::setw(10) << std::right << firstName << "|";
 
-	if (last_name.size() > 10)
+	if (lastName.size() > 10)
 	{
-		last_name[9] = '.';
-		std::cout << std::setw(10) << std::right << last_name.substr(0, 10) << "|";
+		lastName[9] = '.';
+		std::cout << std::setw(10) << std::right << lastName.substr(0, 10) << "|";
 	}
 	else
-		std::cout << std::setw(10) << std::right << last_name << "|";
+		std::cout << std::setw(10) << std::right << lastName << "|";
 
 	if (nickname.size() > 10)
 	{
@@ -43,8 +43,8 @@ void	Contact::print(int index)
 
 void	Contact::set(void)
 {
-	first_name = inputString("First Name");
-	last_name = inputString("Last Name");
+	firstName = inputString("First Name");
+	lastName = inputString("Last Name");
 	nickname = inputString("Nickname");
 	phone = inputNb("Phone Number");
 	secret = inputString("Darkest Secret");
